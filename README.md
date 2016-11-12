@@ -9,9 +9,6 @@ Feedstock license: BSD 3-Clause
 
 Summary: Brent search
 
-Univariate function optimization based on Brent's method.
-
-
 Installing brent_search
 =======================
 

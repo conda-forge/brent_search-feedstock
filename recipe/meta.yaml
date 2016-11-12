@@ -1,6 +1,6 @@
 {% set name = "brent_search" %}
-{% set version = "1.0.11" %}
-{% set sha256 = "583f0f6ff8640abb6d3c0a7b97ad7523750585266122ffccd3f8c1f29089937f" %}
+{% set version = "1.0.13" %}
+{% set sha256 = "d036ecbafe0e11cc6a2eb9bfd0a8a14c2ffb21d2ef4a60875daf896d6fd0c8ee" %}
 
 package:
   name: {{ name|lower }}
@@ -36,10 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Brent search'
-
-  description: |
-    Univariate function optimization based on Brent's method.
+  summary: "Brent's method for univariate function optimization."
   doc_url: https://github.com/Horta/brent-search
   dev_url: https://github.com/Horta/brent-search
 
