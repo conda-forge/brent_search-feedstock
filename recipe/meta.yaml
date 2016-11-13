@@ -1,6 +1,6 @@
 {% set name = "brent_search" %}
-{% set version = "1.0.14" %}
-{% set sha256 = "4635a2098e8e44a614cd680666ae0d87534a35d1e60b30adb81041d629be1b94" %}
+{% set version = "1.0.15" %}
+{% set sha256 = "07e0e7c818a698540b2cd1d5a52ed80d0b6ee9dcbf42629215598b5e7a235adb" %}
 
 package:
   name: {{ name|lower }}
