@@ -1,6 +1,6 @@
 {% set name = "brent_search" %}
-{% set version = "1.0.15" %}
-{% set sha256 = "07e0e7c818a698540b2cd1d5a52ed80d0b6ee9dcbf42629215598b5e7a235adb" %}
+{% set version = "2.0.2" %}
+{% set sha256 = "a2725cd016f8f9cc809e5fddb714b8eb600b3410f8a221f18438c009e4b91a2d" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
